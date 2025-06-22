@@ -1,0 +1,24 @@
+body { 
+font-family: 'Times New Roman', Times, serif;
+
+}
+
+.recipes {
+    color: white;
+    background-color: burlywood;
+}
+
+body {
+      color: brown;
+      background-color: blanchedalmond;
+      font-family: "Courier New", Courier, monospace;
+    }
+
+    .pawn,
+    .chiwi {
+      text-align: center;
+    }
+    .manga {
+      font-weight: 800;
+    }
+
