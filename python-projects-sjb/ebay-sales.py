@@ -33,10 +33,19 @@ worksheet.format("A1:D1", {
 
 worksheet.update_title("Ebay Listings")
 
-titles_list = ["Skate 2", "Terminator","Ride 3"]
+titles_list = ["Monsters, Inc.", "Despicable Me 2","Ride 3"]
 
-values = [[title] for title in titles_list]
+type_list = ["Blue-ray", "3D"]
 
-worksheet.update(range_name='A2:A4', values=values)
+title_values = [[title] for title in titles_list]
+
+type_values = [[type] for type in type_list]
 
 
+
+
+
+worksheet.update(range_name1='A2:A', values1=title_values, range_name2='B2:B', values2=type_values)
+
+
+#A basic version of this would be to write out all of them but wouldn't be more prudent to write them all to a text file and then draw on them via an API call so that they are held within a database. So say I had a database of DVD's to sell and then I want to write them to a spreadsheet to then manipulate the data within their using the functions of Google Sheets. I could also make a steady start with BigQuery too.
